@@ -14,16 +14,16 @@ const Header = () => {
             />
           </div>
           <div className="flex flex-col">
-            <h1 className="text-[#00b0f0] font-bold font-serif text-4xl">
+            <h1 className="text-[#4090f9] font-bold font-serif text-4xl">
               S<span className="text-5xl">n</span>H
             </h1>
-            <hr className="w-full h-[2px] bg-[#00b0f0]" />
+            <hr className="w-full h-[2px] bg-[#4090f9]" />
             <h4 className="text-[#6c6c6c] font-light text-xs">
               Synda Njiki Holdings Pty(ltd)
             </h4>
           </div>
         </Link>
-        <nav className="flex items-center gap-3 text-base font-semibold">
+        <nav className="flex items-center gap-3 text-base font-medium">
           <NavLink
             className={({ isActive }) =>
               isActive
