@@ -8,7 +8,7 @@ const Home = () => {
       <div className="flex flex-col items-center justify-center w-full gap-10 mt-3">
         <div className="flex flex-wrap items-start w-full gap-5">
           <p className="flex-1">
-            Synda Njiki Holdings Pty(ltd) prides itself on a strong work ethic,
+            Syanda Njiki Holdings Pty(ltd) prides itself on a strong work ethic,
             integrity and a customer-centric approach that ensures we meet the
             unique needs of our clients across multiple industries.
           </p>
