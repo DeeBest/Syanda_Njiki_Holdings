@@ -42,6 +42,14 @@ const Header = () => {
           >
             About
           </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? 'text-[#6c6c6c]' : 'hover:text-[#6c6c6c] duration-500'
+            }
+            to="/services"
+          >
+            Services
+          </NavLink>
           <a className="hover:text-[#6c6c6c] duration-500" href="#contact">
             Contact
           </a>
