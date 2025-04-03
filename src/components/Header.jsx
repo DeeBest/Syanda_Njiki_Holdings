@@ -15,11 +15,11 @@ const Header = () => {
     <header className="sticky top-0 left-0 flex items-center justify-center bg-white border-b-2 dark:bg-black border-b-sky-600 z-[1000]">
       <section className="relative flex items-center justify-between flex-1 w-full max-w-4xl gap-10 p-4">
         <Link to="/" className="flex items-center gap-3">
-          <div className="w-[70px]">
+          <div className="w-[90px] h-[90px] rounded-full bg-white overflow-hidden flex items-center justify-center">
             <img
               src={logoImg}
               alt="logo image"
-              className="object-cover w-full"
+              className="object-contain w-full h-full"
             />
           </div>
           <div className="flex flex-col">

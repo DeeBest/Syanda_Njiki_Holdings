@@ -10,15 +10,15 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="w-full text-sm">
+    <footer className="w-full text-sm bg-gray-300 border-t-2 dark:bg-gray-800 border-sky-600">
       <section className="flex flex-col w-full max-w-4xl p-4 mx-auto">
         <div className="flex flex-col items-start justify-between w-full gap-5 sm:flex-row">
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-[70px]">
+            <div className="w-[90px] h-[90px] rounded-full bg-white overflow-hidden flex items-center justify-center">
               <img
                 src={logoImg}
                 alt="logo image"
-                className="object-cover w-full"
+                className="object-contain w-full h-full"
               />
             </div>
             <div className="flex flex-col">
