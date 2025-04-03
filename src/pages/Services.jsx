@@ -25,7 +25,7 @@ const Services = () => {
             className="object-contain w-full h-full"
           />
         </div>
-        <div className="flex w-full gap-5 mt-5">
+        <div className="flex flex-col w-full gap-5 mt-5 sm:flex-row">
           <div className="flex flex-col flex-1 gap-3">
             <p>
               We provide expert electrical maintenance and installation services
@@ -66,9 +66,9 @@ const Services = () => {
         </div>
       </div>
       <div className="flex flex-col w-full gap-3 mt-5">
-        <h3 className="text-2xl font-semibold">Civil Work Services</h3>
+        <h3 className="mt-10 text-2xl font-semibold">Civil Work Services</h3>
 
-        <div className="flex w-full gap-5 mt-5">
+        <div className="flex flex-col w-full gap-5 mt-5 sm:flex-row">
           <div className="flex flex-col self-center flex-1 gap-3">
             <img src={image9} alt="image9" className="rounded-md" />
             <img src={image7} alt="image7" className="rounded-md" />
@@ -113,7 +113,7 @@ const Services = () => {
         </div>
       </div>
       <div className="flex flex-col w-full gap-3 mt-5">
-        <h3 className="text-2xl font-semibold">Supply Services</h3>
+        <h3 className="mt-10 text-2xl font-semibold">Supply Services</h3>
         <div className="flex items-center justify-center w-full overflow-hidden rounded-md h-72">
           <img
             src={image5}
@@ -121,7 +121,7 @@ const Services = () => {
             className="object-contain w-full h-full"
           />
         </div>
-        <div className="flex w-full gap-5 mt-5">
+        <div className="flex flex-col w-full gap-5 mt-5 sm:flex-row">
           <div className="flex flex-col flex-1 gap-3">
             <p>
               We offer a broad range of supply solutions to meet the diverse
@@ -160,8 +160,8 @@ const Services = () => {
         </div>
       </div>
       <div className="flex flex-col w-full gap-3 mt-5">
-        <h3 className="text-2xl font-semibold">Transport Services</h3>
-        <div className="flex w-full gap-5 mt-5">
+        <h3 className="mt-10 text-2xl font-semibold">Transport Services</h3>
+        <div className="flex flex-col w-full gap-5 mt-5 sm:flex-row">
           <div className="flex flex-col flex-1 gap-3">
             <p>
               We provide efficient and reliable transport solutions for
