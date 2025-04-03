@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 left-0 flex items-center justify-center bg-white border-b-2 dark:bg-black border-b-sky-600 z-[1000]">
+    <header className="fixed top-0 left-0 w-full flex items-center justify-center bg-white border-b-2 dark:bg-black border-b-sky-600 z-[1000]">
       <section className="relative flex items-center justify-between flex-1 w-full max-w-4xl gap-10 p-4">
         <Link to="/" className="flex items-center gap-3">
           <div className="w-[90px] h-[90px] rounded-full bg-white overflow-hidden flex items-center justify-center">
@@ -66,9 +66,9 @@ const Header = () => {
           onClick={toggleMobileNav}
         />
         <nav
-          className={`absolute top-0 ${
-            isMobileNavOpen ? 'left-[0]' : 'left-[100%]'
-          } flex flex-col items-center w-full h-screen p-1 text-base font-medium bg-[rgba(148,163,184,0.95)] dark:bg-[rgba(30,41,59,0.95)] sm:hidden transition-all duration-300 ease-in-out`}
+          className={`fixed top-0 ${
+            isMobileNavOpen ? 'left-[0]' : 'left-full'
+          } flex flex-col items-center w-full h-screen p-1 text-base font-medium bg-[rgba(148,163,184,0.95)] dark:bg-[rgba(30,41,59,0.95)] sm:hidden transition-all duration-300 ease-in-out z-[1000]`}
           id="mobile-nav"
         >
           <FaTimes
