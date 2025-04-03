@@ -22,10 +22,10 @@ const Footer = () => {
               />
             </div>
             <div className="flex flex-col">
-              <h1 className="text-[#4090f9] font-bold font-serif text-4xl">
+              <h1 className="font-serif text-4xl font-bold text-sky-600">
                 S<span className="text-5xl">n</span>H
               </h1>
-              <hr className="w-full h-[2px] bg-[#4090f9]" />
+              <hr className="w-full h-[2px] bg-sky-600" />
               <h4 className="text-[#6c6c6c] font-light text-xs">
                 Syanda Njiki Holdings Pty(ltd)
               </h4>
