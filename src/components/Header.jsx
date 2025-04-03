@@ -68,7 +68,7 @@ const Header = () => {
         <nav
           className={`absolute top-0 ${
             isMobileNavOpen ? 'left-[0]' : 'left-[100%]'
-          } flex flex-col items-center w-full h-screen p-1 text-base font-medium bg-slate-400 sm:hidden transition-all duration-300 ease-in-out`}
+          } flex flex-col items-center w-full h-screen p-1 text-base font-medium bg-[rgba(148,163,184,0.95)] dark:bg-[rgba(30,41,59,0.95)] sm:hidden transition-all duration-300 ease-in-out`}
           id="mobile-nav"
         >
           <FaTimes
