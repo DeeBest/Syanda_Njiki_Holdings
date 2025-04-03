@@ -2,10 +2,17 @@ import { FaBars } from 'react-icons/fa6';
 import logoImg from '../assets/logo-img.png';
 import { Link, NavLink } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
+import { useState } from 'react';
 
 const Header = () => {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+  const toggleMobileNav = () => {
+    setIsMobileNavOpen(!isMobileNavOpen);
+  };
+
   return (
-    <header className="flex items-center justify-center border-b-2 border-b-sky-600">
+    <header className="sticky top-0 left-0 flex items-center justify-center bg-white border-b-2 dark:bg-black border-b-sky-600 z-[1000]">
       <section className="relative flex items-center justify-between flex-1 w-full max-w-4xl gap-10 p-4">
         <Link to="/" className="flex items-center gap-3">
           <div className="w-[70px]">
@@ -54,26 +61,58 @@ const Header = () => {
             Contact
           </a>
         </nav>
-        <FaBars className="flex text-2xl sm:hidden" />
-        <nav className="absolute top-0 left-0 z-50 flex flex-col items-center hidden w-full h-screen p-4 bg-slate-400">
-          <FaTimes className="self-end text-2xl" />
+        <FaBars
+          className="flex text-2xl duration-500 rounded-sm cursor-pointer sm:hidden text-sky-600 hover:outline-slate-400 hover:outline"
+          onClick={toggleMobileNav}
+        />
+        <nav
+          className={`absolute top-0 ${
+            isMobileNavOpen ? 'left-[0]' : 'left-[100%]'
+          } flex flex-col items-center w-full h-screen p-1 text-base font-medium bg-slate-400 sm:hidden transition-all duration-300 ease-in-out`}
+          id="mobile-nav"
+        >
+          <FaTimes
+            className="self-start text-2xl text-red-600 duration-500 rounded-sm cursor-pointer hover:outline-slate-100 hover:outline"
+            onClick={toggleMobileNav}
+          />
           <NavLink
             className={({ isActive }) =>
-              isActive ? 'text-[#6c6c6c]' : 'hover:text-[#6c6c6c] duration-500'
+              isActive
+                ? 'text-[#6c6c6c]'
+                : 'hover:text-[#6c6c6c] hover:bg-slate-100 w-full text-center duration-500'
             }
+            onClick={toggleMobileNav}
             to="/"
           >
             Home
           </NavLink>
           <NavLink
             className={({ isActive }) =>
-              isActive ? 'text-[#6c6c6c]' : 'hover:text-[#6c6c6c] duration-500'
+              isActive
+                ? 'text-[#6c6c6c]'
+                : 'hover:text-[#6c6c6c] hover:bg-slate-100 w-full text-center duration-500'
             }
+            onClick={toggleMobileNav}
             to="/about"
           >
             About
           </NavLink>
-          <a className="hover:text-[#6c6c6c] duration-500" href="#contact">
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? 'text-[#6c6c6c]'
+                : 'hover:text-[#6c6c6c] hover:bg-slate-100 w-full text-center duration-500'
+            }
+            onClick={toggleMobileNav}
+            to="/services"
+          >
+            Services
+          </NavLink>
+          <a
+            className="hover:text-[#6c6c6c] hover:bg-slate-100 w-full text-center duration-500"
+            href="#contact"
+            onClick={toggleMobileNav}
+          >
             Contact
           </a>
         </nav>
