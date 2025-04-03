@@ -82,7 +82,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-between mt-5 text-xs">
+        <div className="flex flex-col items-center justify-between mt-5 text-xs sm:flex-row">
           <p>&copy;Syanda Njiki Holdings Pty(ltd) || All Rights Reserved</p>
           <div className="flex flex-col items-center justify-center">
             <p>

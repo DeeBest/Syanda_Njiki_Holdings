@@ -6,8 +6,8 @@ const About = () => {
   return (
     <section className="flex flex-col items-center justify-center w-full gap-5">
       <h1 className="font-serif text-3xl font-bold">About Us</h1>
-      <div className="flex items-center w-full gap-2">
-        <div className="flex items-center justify-center flex-1 w-1/3">
+      <div className="flex flex-col items-center w-full gap-2 sm:flex-row">
+        <div className="flex items-center justify-center flex-1 w-full sm:w-1/3">
           <img
             src={image10}
             alt="image10"
@@ -34,7 +34,7 @@ const About = () => {
         </div>
       </div>
       <h3 className="text-2xl font-bold">Our Mission</h3>
-      <div className="flex w-full gap-2">
+      <div className="flex flex-col w-full gap-2 sm:flex-row">
         <div className="flex flex-col flex-1 gap-3">
           <p>
             Our mission is to provide innovative and dependable services in
@@ -61,7 +61,7 @@ const About = () => {
         </div>
       </div>
       <h3 className="text-2xl font-bold">Our Vision</h3>
-      <div className="flex gap-2">
+      <div className="flex flex-col gap-2 sm:flex-row">
         <div className="flex items-center justify-center flex-1">
           <img
             src={image12}
