@@ -71,10 +71,25 @@ const Header = () => {
           } flex flex-col items-center w-full h-screen p-8 text-base font-medium bg-[rgba(148,163,184,0.95)] dark:bg-[rgba(30,41,59,0.95)] sm:hidden transition-all duration-300 ease-in-out z-[1000]`}
           id="mobile-nav"
         >
-          <FaTimes
-            className="self-start text-2xl text-red-600 duration-500 rounded-sm cursor-pointer hover:outline-slate-100 hover:outline"
-            onClick={toggleMobileNav}
-          />
+          <div className="flex items-center justify-between w-full gap-2 mb-10">
+            <Link
+              to="/"
+              className="flex items-center gap-3"
+              onClick={toggleMobileNav}
+            >
+              <div className="w-[70px] h-[70px] rounded-full bg-white overflow-hidden flex items-center justify-center">
+                <img
+                  src={logoImg}
+                  alt="logo image"
+                  className="object-contain w-full h-full"
+                />
+              </div>
+            </Link>
+            <FaTimes
+              className="text-6xl text-red-600 duration-500 rounded-sm cursor-pointer hover:outline-slate-100 hover:outline"
+              onClick={toggleMobileNav}
+            />
+          </div>
           <NavLink
             className={({ isActive }) =>
               isActive
